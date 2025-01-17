@@ -1,0 +1,15 @@
+@EndUserText.label: 'Access Control for ZYR_I_RAP_TRAVEL'
+@MappingRole: true
+define role ZYR_I_RAP_TRAVEL {
+    grant
+        select
+            on
+                ZYR_I_RAP_TRAVEL
+                    where
+//                        (TravelStatus)
+//                                = aspect pfcg_auth ( ZYROSTAT,ZYROSTAT,ACTVT = '03' )
+//                                and
+//                            CurrencyCode = 'EUR';
+                        true;
+                        
+}
