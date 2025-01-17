@@ -9,6 +9,9 @@ use etag
   use delete;
 
   use association _Booking { create; }
+
+  use action acceptTravel;
+  use action rejectTravel;
 }
 
 define behavior for ZYR_C_RAP_Booking alias Booking

@@ -58,8 +58,13 @@ annotate entity ZYR_C_RAP_Travel
           identification: [ { position: 80 } ] }   
   Description;
 
-  @UI: {  lineItem:       [ { position: 90 } ],
-          identification: [ { position: 90 } ] }   
+  @UI: {  lineItem:       [ { position: 90 } ,
+                            { type: #FOR_ACTION, dataAction: 'acceptTravel', label: 'Accept Travel' },
+                            { type: #FOR_ACTION, dataAction: 'rejectTravel', label: 'Reject Travel' } ],
+          identification: [ { position: 90 } ,
+                            { type: #FOR_ACTION, dataAction: 'acceptTravel', label: 'Accept Travel' },
+                            { type: #FOR_ACTION, dataAction: 'rejectTravel', label: 'Reject Travel' } ]
+           }   
   TravelStatus;
 
   @UI.hidden: true
