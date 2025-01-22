@@ -110,6 +110,7 @@ Once the application is installed and deployed, you can start using it by follow
 
 ## Project Structure
 src/: Contains the source code for the application.
+
 img/: Contains the source for the images.
 
 ## Contributing
