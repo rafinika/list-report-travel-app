@@ -1,4 +1,4 @@
-# list report travel app
+# List Report Travel App
 ABAP Project - Greenfield Implementation - of a list report travel app by Yoga Rafinika
 
 ## Introduction
