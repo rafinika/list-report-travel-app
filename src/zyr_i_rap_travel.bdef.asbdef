@@ -1,11 +1,13 @@
 managed;//
 //strict ( 2 );
+with draft;
 
 define behavior for ZYR_I_RAP_Travel alias Travel
 implementation in class zbp_yr_i_rap_travel unique
 persistent table zyr_travel
-lock master
-//authorization master ( instance )
+draft table zyr_dtravel
+lock master total etag LastChangedAt
+authorization master ( instance )
 etag master LocalLastChangedAt
 {
   create;
@@ -29,6 +31,12 @@ etag master LocalLastChangedAt
   validation validateCustomer on save { field CustomerID;create; }
   validation validateDates on save { field BeginDate, EndDate;create; }
 
+  draft determine action Prepare  {
+    validation validateAgency;
+    validation validateCustomer;
+    validation validateDates;
+  }
+
   mapping for zyr_travel
     {
       TravelUUID         = travel_uuid;
@@ -48,15 +56,16 @@ etag master LocalLastChangedAt
       LastChangedAt      = last_changed_at;
       LocalLastChangedAt = local_last_changed_at;
     }
-    association _Booking {create; }
+    association _Booking {create; with draft; }
 
 }
 
 define behavior for ZYR_I_RAP_Booking alias Booking
 implementation in class zbp_yr_i_rap_booking unique
 persistent table zyr_book
+draft table zyr_dbook
 lock dependent by _Travel
-//authorization dependent by _Travel
+authorization dependent by _Travel
 etag master LocalLastChangedAt
 {
   update;
@@ -70,7 +79,7 @@ etag master LocalLastChangedAt
   determination calculateTotalPrice on modify { field FlightPrice, CurrencyCode; }
 
 
-  association _Travel;
+  association _Travel { with draft; }
 
   mapping for zyr_book
   {
