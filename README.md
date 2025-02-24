@@ -53,7 +53,7 @@ A Customer entity provides a detailed description of a flight customer (passenge
   3. Activate all the objects in the project.
 
 ### Fiori App
-You can directly interact with the app using the following Fiori app link:
+You can directly interact with the app using the following Fiori app link (Auth. Access Required):
 
 [Fiori App Link](https://23bf02f0-9d4d-4fe7-ae57-cab54ffafb1e.abap-web.us10.hana.ondemand.com/sap/bc/adt/businessservices/odatav4/feap/C%C2%87u%C2%84C%C2%83%C2%84%C2%89C%C2%83xu%C2%88uHC%C2%87u%C2%84C%C2%8E%C2%8D%C2%86s%C2%89%7Ds%C2%86u%C2%84s%C2%88%C2%86u%C2%8Ay%C2%80s%C2%83HC%C2%87%C2%86%C2%8AxC%C2%87u%C2%84C%C2%8E%C2%8D%C2%86s%C2%89%7Ds%C2%86u%C2%84s%C2%88%C2%86u%C2%8Ay%C2%80CDDDEC77h%C2%86u%C2%8Ay%C2%8077sU%7By%C2%82w%C2%8DTTsV%C2%83%C2%83%7F%7D%C2%82%7BTTsW%C2%89%C2%86%C2%86y%C2%82w%C2%8DTTsW%C2%89%C2%87%C2%88%C2%83%C2%81y%C2%8677U%7By%C2%82w%C2%8DTTV%C2%83%C2%83%7F%7D%C2%82%7BTTW%C2%89%C2%86%C2%86y%C2%82w%C2%8DTTW%C2%89%C2%87%C2%88%C2%83%C2%81y%C2%8677nmfsi%5DsfUdshfUjY%6077DDDE77nmfsi%5DsfUdshfUjY%60scH/index.html?sap-ui-xx-viewCache=false&sap-ui-language=EN&sap-client=100 "List Report Travel App")
 
