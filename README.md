@@ -53,7 +53,7 @@ A Customer entity provides a detailed description of a flight customer (passenge
 
   3. Publish the Service Binding and preview the Fiori App.
 
-     You can follow detailed instruction to importing from github into the BTP ABAP Environtment from this tutorial:
+     You can follow detailed instruction to import content from github into the BTP ABAP Environtment from this tutorial:
      [Import Content from abapGit Repository into the BTP ABAP Environment](https://community.sap.com/t5/technology-blogs-by-members/import-content-from-abapgit-repository-into-the-btp-abap-environment/ba-p/13559990#:~:text=Go%20to%20the%20project%20explorer%20and%20create%20a,objects%20from%20the%20github%20into%20the%20abap%20package)
 
 ### Fiori App
